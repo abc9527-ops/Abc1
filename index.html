@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>ABC Computer &amp; Electronics | Your trusted IT partner since 1991</title>
+<meta name="description" content="Premium computers, IT services, technician booking and business IT solutions from ABC Computer &amp; Electronics, serving customers since 1991.">
+<meta name="theme-color" content="#121110">
+<meta property="og:title" content="ABC Computer &amp; Electronics">
+<meta property="og:description" content="Technology. Simplified. Premium computers and complete IT solutions since 1991.">
+<meta property="og:type" content="website">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Outfit:wght@200;300;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f6f0e4;--bg2:#ebe2d0;--text:#241a14;--dim:#d8cdb9;--muted:#6b5d50;--line:#d2c5ae;--gold:#8f6c2c;--gold2:#c49a45;--on:#fffaf0;--ok:#2f7a48;--bad:#b3402f;
+--head:'Outfit','Inter',system-ui,sans-serif;--body:'Inter',system-ui,sans-serif;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#121110;--bg2:#1b1917;--text:#f3ecdf;--dim:#35302a;--muted:#a89e8e;--line:#34302b;--gold:#d9b96f;--gold2:#f0d58f;--on:#121110;--ok:#86c99b;--bad:#ee8d7a}}
+:root[data-theme="dark"]{--bg:#121110;--bg2:#1b1917;--text:#f3ecdf;--dim:#35302a;--muted:#a89e8e;--line:#34302b;--gold:#d9b96f;--gold2:#f0d58f;--on:#121110;--ok:#86c99b;--bad:#ee8d7a;color-scheme:dark}
+:root[data-theme="light"]{color-scheme:light}
+html{scroll-padding-top:calc(60px + env(safe-area-inset-top,0px));scroll-behavior:smooth}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font:400 16px/1.6 var(--body);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--bg);z-index:40}
+h1,h2,h3{font-family:var(--head);margin:0;line-height:1;letter-spacing:-.03em;font-weight:300}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+button{font:500 15px var(--body);cursor:pointer}
+header{position:fixed;top:env(safe-area-inset-top,0px);left:0;right:0;z-index:30;display:flex;justify-content:space-between;align-items:center;padding:14px 22px;background:linear-gradient(var(--bg),transparent)}
+.logo{font:600 22px var(--head);letter-spacing:.06em;text-decoration:none}
+.logo i{color:var(--gold);font-style:normal}
+.hr{display:flex;gap:10px;align-items:center}
+.btn{background:var(--gold);color:var(--on);border:0;border-radius:999px;padding:12px 22px;text-decoration:none;display:inline-block}
+.btn.o{background:transparent;color:var(--text);border:1px solid var(--line)}
+.ic{width:40px;height:40px;border-radius:50%;border:1px solid var(--line);background:transparent;color:var(--text)}
+.hero{position:relative;min-height:100svh;display:flex;flex-direction:column;justify-content:flex-end;padding:0 22px clamp(36px,7vh,80px);overflow:hidden}
+#cv{position:absolute;inset:0;width:100%;height:100%}
+.hero>*:not(canvas){position:relative}
+.since{color:var(--gold);font-size:17px;margin:0 0 10px}
+.big{font-size:clamp(88px,26vw,380px);font-weight:600;letter-spacing:-.05em;line-height:.8;margin-left:-.04em;color:transparent;background:radial-gradient(circle 260px at var(--mx,30%) var(--my,60%),var(--gold2),transparent 70%),linear-gradient(var(--dim),var(--dim));-webkit-background-clip:text;background-clip:text;user-select:none}
+.tag{display:flex;justify-content:space-between;align-items:flex-end;gap:24px;flex-wrap:wrap;margin-top:28px}
+.tag h1{font-size:clamp(28px,4.6vw,58px)}
+.tag p{max-width:38ch;color:var(--muted);margin:10px 0 0}
+.cta{display:flex;gap:10px;flex-wrap:wrap}
+section{padding:clamp(70px,11vw,150px) 0}
+.w{padding:0 22px;max-width:1200px;margin:0 auto}
+h2{font-size:clamp(36px,7vw,92px)}
+.lead{color:var(--muted);max-width:50ch;font-size:18px;margin:18px 0 0}
+.rail{display:flex;gap:18px;overflow-x:auto;scroll-snap-type:x mandatory;padding:44px 22px 20px;scrollbar-width:none}
+.rail::-webkit-scrollbar{display:none}
+.pan{flex:0 0 min(82vw,460px);height:min(66vh,520px);scroll-snap-align:center;border:1px solid var(--line);border-radius:28px;padding:30px;display:flex;flex-direction:column;justify-content:space-between;background:linear-gradient(160deg,var(--bg2),var(--bg));text-decoration:none;transition:border-color .3s}
+.pan:hover{border-color:var(--gold)}
+.pan svg{width:100%;max-height:58%;stroke:var(--gold);fill:none;stroke-width:1.2;stroke-linecap:round;stroke-linejoin:round}
+.pan h3{font-size:34px;margin-bottom:6px}.pan p{margin:0;color:var(--muted);font-size:15px}
+.studio{background:var(--bg2)}
+.b{display:grid;grid-template-columns:1fr 1fr;gap:40px;margin-top:48px;align-items:center}
+@media(max-width:860px){.b{grid-template-columns:1fr}}
+.stage{height:min(62vw,440px);min-height:330px;perspective:1100px;display:grid;place-items:center}
+.stack{position:relative;width:230px;height:230px;transform-style:preserve-3d;transform:rotateX(62deg) rotateZ(-32deg);transition:transform .9s}
+.stage:hover .stack{transform:rotateX(55deg) rotateZ(-20deg)}
+.pl{position:absolute;inset:0;border:1.5px solid var(--gold);border-radius:14px;background:color-mix(in srgb,var(--bg) 70%,transparent);display:flex;align-items:flex-start;justify-content:flex-start;padding:10px 12px;font:500 12px var(--body);color:var(--text);transition:transform .9s cubic-bezier(.2,.8,.2,1),border-color .3s,box-shadow .3s}
+.pl.bad{border-color:var(--bad);box-shadow:0 0 28px color-mix(in srgb,var(--bad) 60%,transparent)}
+.pl.ok{box-shadow:0 0 22px color-mix(in srgb,var(--gold) 28%,transparent)}
+.row{display:grid;grid-template-columns:104px 1fr;gap:12px;align-items:center;padding:9px 0;border-bottom:1px solid var(--line)}
+.row label{color:var(--muted);font-size:14px}
+select{width:100%;background:var(--bg);color:var(--text);border:1px solid var(--line);border-radius:10px;padding:11px;font:15px var(--body)}
+.tot{font:200 clamp(44px,7vw,76px) var(--head);margin:22px 0 2px}
+.sm{color:var(--muted);font-size:14px;margin:0}
+ul.ck{list-style:none;margin:14px 0 20px;padding:0}
+ul.ck li{padding:8px 0 8px 24px;position:relative;font-size:14px;border-top:1px solid var(--line)}
+ul.ck li::before{content:"";position:absolute;left:2px;top:15px;width:10px;height:10px;border-radius:50%;background:var(--ok)}
+ul.ck li.bad::before{background:var(--bad)}
+#qm{min-height:22px;margin-top:10px;font-size:14px}
+.trk{margin-top:44px}
+.lk{display:flex;gap:10px;max-width:520px;margin-bottom:8px}
+.lk input{flex:1;min-width:0;background:transparent;color:var(--text);border:1px solid var(--line);border-radius:999px;padding:13px 18px;font:16px var(--body)}
+.line{display:flex;margin-top:46px;overflow-x:auto;padding-bottom:10px;scrollbar-width:none}
+.st{flex:1 0 128px;position:relative;padding-top:30px;color:var(--muted);font-size:14px}
+.st::before{content:"";position:absolute;top:8px;left:0;right:0;height:2px;background:var(--line)}
+.st::after{content:"";position:absolute;top:2px;left:0;width:14px;height:14px;border-radius:50%;background:var(--bg);border:2px solid var(--line)}
+.st.d{color:var(--text)}.st.d::before{background:var(--gold)}.st.d::after{background:var(--gold);border-color:var(--gold)}
+.st.n::after{border-color:var(--gold);box-shadow:0 0 0 6px color-mix(in srgb,var(--gold) 25%,transparent)}
+.st small{display:block;font-size:12px;color:var(--muted);padding-right:10px}
+.num{font:200 clamp(120px,32vw,420px)/.85 var(--head);letter-spacing:-.05em;color:var(--gold);margin-top:30px}
+.facts{display:flex;gap:30px;flex-wrap:wrap;margin-top:34px;color:var(--muted)}
+.facts b{display:block;font:300 34px var(--head);color:var(--text)}
+footer{padding:36px 22px 60px;color:var(--muted);font-size:13px;display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap}
+.bk{margin-top:40px;max-width:760px;display:grid;gap:16px}.bk label,.sw{display:block;color:var(--muted);font-size:14px;margin-bottom:6px}.bk input,.bk select{width:100%;background:transparent;color:var(--text);border:1px solid var(--line);border-radius:12px;padding:12px;font:16px var(--body)}.fr{display:grid;grid-template-columns:1fr 1fr;gap:14px}@media(max-width:600px){.fr{grid-template-columns:1fr}}.sv{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:10px}.sv button,.sl button{text-align:left;background:transparent;color:var(--text);border:1px solid var(--line);border-radius:14px;padding:14px}.sv button small{display:block;color:var(--muted);font-weight:400}.sv button[aria-checked=true],.sl button[aria-checked=true]{border-color:var(--gold);box-shadow:0 0 0 1px var(--gold)}.sl{display:flex;gap:10px;flex-wrap:wrap}.sl button{padding:11px 16px;border-radius:999px}.sl button:disabled{opacity:.4;text-decoration:line-through;cursor:not-allowed}.card2{border:1px solid var(--line);border-radius:22px;padding:26px;background:var(--bg)}.studio .card2{background:var(--bg2)}#bc{margin-top:24px;max-width:760px}#bc p{margin:8px 0}.g{display:grid;grid-template-columns:1.3fr 1fr;gap:28px;margin-top:40px;align-items:center}@media(max-width:860px){.g{grid-template-columns:1fr}}.map{width:100%;height:auto;background:var(--bg);border:1px solid var(--line);border-radius:22px}.rd path{stroke:var(--line);stroke-width:6;fill:none}.rt{stroke:var(--gold);stroke-width:2;stroke-dasharray:6 6;fill:none}.cu{fill:none;stroke:var(--gold);stroke-width:3}.tc{fill:var(--gold);transition:opacity .3s}.eta{font:300 34px var(--head);margin:14px 0 4px}.sw{display:flex;gap:10px;align-items:center;margin:16px 0;color:var(--text)}.sw input{accent-color:var(--gold);width:20px;height:20px}.cbt{position:fixed;right:18px;bottom:calc(18px + env(safe-area-inset-bottom,0px));z-index:35;border-radius:999px;padding:14px 22px;box-shadow:0 8px 30px rgba(0,0,0,.35)}.cp{position:fixed;right:14px;bottom:calc(76px + env(safe-area-inset-bottom,0px));z-index:36;width:min(94vw,390px);height:min(72vh,540px);background:var(--bg);border:1px solid var(--gold);border-radius:22px;display:flex;flex-direction:column;overflow:hidden;box-shadow:0 18px 60px rgba(0,0,0,.45)}.cp[hidden]{display:none}.ch{display:flex;justify-content:space-between;align-items:center;padding:14px 18px;border-bottom:1px solid var(--line);font:500 18px var(--head)}.ch button{background:none;border:0;color:var(--text);font-size:22px}.cm{flex:1;overflow:auto;padding:14px;display:flex;flex-direction:column;gap:10px}.mb{max-width:86%;padding:10px 14px;border-radius:16px;font-size:15px;background:var(--bg2);white-space:pre-line}.mb.u{align-self:flex-end;background:var(--gold);color:var(--on)}.chp{display:flex;gap:8px;flex-wrap:wrap}.chp button{background:transparent;color:var(--text);border:1px solid var(--gold);border-radius:999px;padding:7px 12px;font-size:13px}.cf{display:flex;gap:8px;padding:12px;border-top:1px solid var(--line)}.cf input{flex:1;min-width:0;background:transparent;color:var(--text);border:1px solid var(--line);border-radius:999px;padding:11px 16px;font:16px var(--body)}.cn{font-size:12px;color:var(--muted);padding:0 16px 8px}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.stack,.pl{transition:none}}
+</style>
+</head>
+<body>
+<header><a class="logo" href="#top">ABC<i>.</i></a><div class="hr"><button class="ic" id="th" aria-label="Switch between light and dark mode">◐</button><a class="btn" href="#book">Book a service</a></div></header>
+<main id="top">
+<div class="hero">
+<canvas id="cv" aria-hidden="true"></canvas>
+<p class="since">Your trusted IT partner since 1991</p>
+<div class="big" id="big">ABC.</div>
+<div class="tag"><div><h1>Technology. Simplified.</h1><p>Premium computers and complete IT solutions, backed by people who have done this for decades.</p></div>
+<div class="cta"><a class="btn" href="#eco">Explore products</a><a class="btn o" href="#build">Build your PC</a></div></div>
+</div>
+
+<section id="eco"><div class="w"><h2>Your whole digital world, curated</h2><p class="lead">Swipe through the ABC ecosystem.</p></div>
+<div class="rail">
+<a class="pan" href="#build"><svg viewBox="0 0 200 120"><rect x="38" y="14" width="124" height="78" rx="6"/><path d="M22 100h156l-10 8H32z"/><path d="M60 40h50M60 54h80M60 68h36"/></svg><div><h3>Laptops &amp; computers</h3><p>Genuine machines for work, study and play.</p></div></a>
+<a class="pan" href="#build"><svg viewBox="0 0 200 120"><rect x="82" y="12" width="36" height="62" rx="18"/><path d="M100 12v24M30 96h140M50 84h100"/></svg><div><h3>Accessories</h3><p>Displays, storage, peripherals and networking.</p></div></a>
+<a class="pan" href="#book"><svg viewBox="0 0 200 120"><circle cx="100" cy="60" r="38"/><circle cx="100" cy="60" r="12"/><path d="M100 14v20M100 86v20M54 60H34M166 60h-20"/></svg><div><h3>IT services</h3><p>Repairs, upgrades and technician visits.</p></div></a>
+<a class="pan" href="#why"><svg viewBox="0 0 200 120"><rect x="30" y="20" width="60" height="84"/><rect x="90" y="48" width="80" height="56"/><path d="M44 36h12M64 36h12M44 54h12M64 54h12M44 72h12M64 72h12M104 64h12M124 64h12M144 64h12"/></svg><div><h3>Business solutions</h3><p>Annual maintenance, devices and IT management.</p></div></a>
+</div></section>
+
+<section class="studio" id="build"><div class="w"><h2>Build your ideal PC</h2><p class="lead">Choose components and watch the machine assemble. Conflicts glow red. Prices are sample figures.</p>
+<div class="b"><div class="stage"><div class="stack" id="stack"></div></div>
+<div><div id="parts"></div><div class="tot" id="tot">₹0</div><p class="sm" id="w"></p><ul class="ck" id="ck" aria-live="polite"></ul><button class="btn" id="q">Request a quotation</button><div id="qm" role="status"></div></div></div>
+</div></section>
+
+<section id='book'><div class='w'><h2>Book a technician in a minute</h2><p class='lead'>Choose the service, pick a slot and we match the right technician.</p><form class='bk' id='bf' novalidate><div class='sv' id='sv' role='radiogroup' aria-label='Service'></div><div class='fr'><div><label for='bm'>How should we help?</label><select id='bm'><option>Technician visits me</option><option>Pickup and delivery</option><option>I bring it to the shop</option></select></div><div><label for='bd'>Date</label><input type='date' id='bd'></div></div><div class='sl' id='sl' role='radiogroup' aria-label='Time slot'></div><div class='fr'><div><label for='bn'>Name</label><input id='bn' autocomplete='name'></div><div><label for='bp'>Phone</label><input id='bp' type='tel' autocomplete='tel'></div></div><div id='ba'><label for='bad'>Address for the visit or pickup</label><input id='bad' autocomplete='street-address'></div><button class='btn' type='submit'>Confirm booking</button><p id='be' class='sm' role='alert'></p></form><div class='card2' id='bc' hidden></div></div></section>
+<section class='studio' id='live'><div class='w'><h2>Know where your technician is</h2><p class='lead'>Location is shared only during an active visit, and only while the technician has sharing on.</p><div class='g'><svg class='map' viewBox='0 0 400 260' role='img' aria-label='Technician route map'><g class='rd'><path d='M0 220H400M0 150H400M0 90H400M0 40H400M40 0V260M150 0V260M290 0V260M360 0V260'/></g><path id='rt' class='rt' d='M40 220V150H150V90H290V50'/><circle cx='290' cy='50' r='10' class='cu'/><circle id='tc' r='8' class='tc' cx='40' cy='220'/></svg><div class='card2'><h3>Rahul S.</h3><p class='sm'>Laptops and hardware, sample visit</p><div class='eta' id='eta'>Not started</div><p class='sm' id='gs'>Start the demo to see the technician approach.</p><label class='sw'><input type='checkbox' id='sh' checked> Technician is sharing location</label><button class='btn' id='go' type='button'>Start demo visit</button></div></div></div></section>
+<section id="service"><div class="w"><h2>Watch every repair, live</h2><p class="lead">Enter the reference from your receipt to see each stage.</p>
+<div class="trk"><form class="lk" id="lf"><input id="rf" aria-label="Repair reference" placeholder="Reference, for example ABC-1042" autocomplete="off"><button class="btn" type="submit">Track</button></form><p class="sm" id="lm">Try the sample reference ABC-1042.</p>
+<div class="line" id="ln"></div></div></div></section>
+
+<section id="why"><div class="w"><h2>Trust, built over decades</h2><div class="num" id="yr" aria-label="1991">1991</div>
+<div class="facts"><div><b>360°</b>IT solutions</div><div><b>Genuine</b>products only</div><div><b>One team</b>sales to support</div></div></div></section>
+</main>
+<button class='btn cbt' id='cbt' aria-expanded='false' aria-controls='cp'>Ask ABC</button>
+<div class='cp' id='cp' role='dialog' aria-label='ABC assistant' hidden><div class='ch'><span>ABC Assistant</span><button id='cx' aria-label='Close chat'>×</button></div><div class='cm' id='cm' aria-live='polite'></div><div class='cn'>Preview assistant with scripted answers. The live version connects to an AI model and our catalogue.</div><form class='cf' id='cf'><input id='ci' aria-label='Message' placeholder='Ask about products or problems' autocomplete='off'><button class='btn' type='submit'>Send</button></form></div>
+<footer><span>© ABC Computer &amp; Electronics</span><span>Conceptual preview. Products, prices and tracking data are samples.</span></footer>
+<script>
+(function(){
+var R=document.documentElement,rm=matchMedia('(prefers-reduced-motion: reduce)').matches;
+try{var t=localStorage.getItem('abc-th');if(t)R.setAttribute('data-theme',t)}catch(e){}
+document.getElementById('th').onclick=function(){var n=R.getAttribute('data-theme')==='dark'?'light':'dark';R.setAttribute('data-theme',n);try{localStorage.setItem('abc-th',n)}catch(e){}};
+var big=document.getElementById('big');
+function ptr(x,y){var r=big.getBoundingClientRect();big.style.setProperty('--mx',(x-r.left)+'px');big.style.setProperty('--my',(y-r.top)+'px')}
+addEventListener('pointermove',function(e){ptr(e.clientX,e.clientY);mx=e.clientX;my=e.clientY});
+var cv=document.getElementById('cv'),cx=cv.getContext('2d'),W,H,mx=-999,my=-999,T=0;
+function rs(){var d=devicePixelRatio||1;W=cv.clientWidth;H=cv.clientHeight;cv.width=W*d;cv.height=H*d;cx.setTransform(d,0,0,d,0,0)}
+addEventListener('resize',rs);rs();
+function gold(){return getComputedStyle(R).getPropertyValue('--gold').trim()||'#d9b96f'}
+function frame(){
+T+=.012;cx.clearRect(0,0,W,H);cx.fillStyle=gold();
+var cols=Math.ceil(W/22),rows=26;
+for(var j=0;j<rows;j++){var p=j/rows,y0=H*.38+p*p*H*.62,sc=.35+p*1.1;
+for(var i=0;i<=cols;i++){var x=i/cols*W,
+a=Math.sin(i*.35+T*2+j*.5)*14*sc+Math.sin(i*.09-T)*18*sc,y=y0+a,
+dx=x-mx,dy=y-my,d=Math.sqrt(dx*dx+dy*dy),l=Math.max(0,1-d/220);
+cx.globalAlpha=Math.min(1,.12+p*.45+l*.8);cx.beginPath();cx.arc(x,y-l*16,(.8+p*1.4)*(1+l*1.6),0,6.3);cx.fill()}}
+cx.globalAlpha=1;if(!rm)requestAnimationFrame(frame)}
+frame();
+var D={cpu:[['Ryzen 5 7600',19500,'AM5',65],['Ryzen 7 7700',29000,'AM5',65],['Core i5-13400F',18000,'LGA1700',65]],
+board:[['B650 board (DDR5)',14500,'AM5','DDR5'],['B760 board (DDR5)',13000,'LGA1700','DDR5'],['B760 board (DDR4)',11000,'LGA1700','DDR4']],
+ram:[['16 GB DDR5',5000,'DDR5'],['32 GB DDR5',9500,'DDR5'],['16 GB DDR4',3200,'DDR4']],
+gpu:[['Integrated graphics',0,0],['GeForce RTX 4060',29000,115],['GeForce RTX 4070 Super',58000,220]],
+ssd:[['512 GB NVMe',3500],['1 TB NVMe',6000],['2 TB NVMe',11000]],
+psu:[['550 W',4500,550],['750 W',7000,750]]};
+var L=[['psu','Power'],['ssd','Storage'],['gpu','Graphics'],['ram','Memory'],['board','Board'],['cpu','Processor']];
+var P=document.getElementById('parts'),S=document.getElementById('stack'),pl={};
+L.slice().reverse().forEach(function(p){
+var r=document.createElement('div');r.className='row';
+r.innerHTML='<label for="s'+p[0]+'">'+p[1]+'</label><select id="s'+p[0]+'">'+D[p[0]].map(function(x,i){return '<option value="'+i+'">'+x[0]+' ('+(x[1]?'₹'+x[1].toLocaleString('en-IN'):'included')+')</option>'}).join('')+'</select>';
+P.appendChild(r);r.querySelector('select').onchange=calc});
+L.forEach(function(p,i){var e=document.createElement('div');e.className='pl';e.dataset.i=i;S.appendChild(e);pl[p[0]]=e});
+var gap=8,tg=false;
+function lay(){L.forEach(function(p,i){pl[p[0]].style.transform='translateZ('+(i*gap)+'px)'})}
+function g(k){return D[k][+document.getElementById('s'+k).value]}
+function calc(){
+var c=g('cpu'),b=g('board'),m=g('ram'),v=g('gpu'),s=g('ssd'),u=g('psu'),tot=c[1]+b[1]+m[1]+v[1]+s[1]+u[1];
+document.getElementById('tot').textContent='₹'+tot.toLocaleString('en-IN');
+var dr=c[3]+v[2]+100,nd=Math.ceil(dr*1.3/50)*50;
+document.getElementById('w').textContent='Estimated draw about '+dr+' W. Recommended supply at least '+nd+' W.';
+var r=[[c[2]===b[2],'Processor fits the board ('+b[2]+').','Processor socket '+c[2]+' does not match board socket '+b[2]+'.',['cpu','board']],
+[m[2]===b[3],'Memory matches the board ('+b[3]+').','Memory is '+m[2]+' but the board needs '+b[3]+'.',['ram','board']],
+[u[2]>=nd,'Power supply has enough headroom.','Power supply is too small. Choose at least '+nd+' W.',['psu']]];
+var ul=document.getElementById('ck');ul.innerHTML='';
+L.forEach(function(p){pl[p[0]].className='pl ok';pl[p[0]].textContent=g(p[0])[0]});
+r.forEach(function(x){var li=document.createElement('li');li.className=x[0]?'':'bad';li.textContent=x[0]?x[1]:x[2];ul.appendChild(li);if(!x[0])x[3].forEach(function(k){pl[k].className='pl bad'})});
+window.__ok=r.every(function(x){return x[0]})}
+calc();lay();
+new IntersectionObserver(function(e){if(e[0].isIntersecting){gap=46;lay()}else{gap=8;lay()}},{threshold:.5}).observe(S);
+document.getElementById('q').onclick=function(){var m=document.getElementById('qm');m.style.color=window.__ok?'var(--ok)':'var(--bad)';m.textContent=window.__ok?'Configuration saved for this preview. A live site would send it to our sales team.':'Fix the highlighted conflicts before requesting a quotation.'};
+var ST=[['Booked','Request received'],['Assigned','Technician confirmed'],['Diagnosing','Fault being checked'],['Approval','Parts and charges for you'],['Repairing','Work in progress'],['Ready','Quality check passed'],['Delivered','Closed with warranty']];
+function dr(n){document.getElementById('ln').innerHTML=ST.map(function(s,i){return '<div class="st '+(i<n?'d':i===n?'n':'')+'">'+s[0]+'<small>'+s[1]+'</small></div>'}).join('')}
+dr(-1);
+document.getElementById('lf').onsubmit=function(e){e.preventDefault();var v=document.getElementById('rf').value.trim().toUpperCase(),m=document.getElementById('lm');
+if(v==='ABC-1042'){dr(3);m.textContent='Sample repair: waiting for your approval of parts and charges.'}else{dr(-1);m.textContent='No repair found for that reference. Check your receipt, or try ABC-1042.'}};
+var SV=[['Laptop or desktop repair','Fault diagnosis and repair','₹499 diagnostic',0],['OS and software','Windows, drivers, security','₹699',2],['Data backup and recovery','Backups and recovery attempts','From ₹999',2],['Upgrades','RAM, SSD and performance','From ₹399',0],['Network and Wi-Fi','Router, cabling, office network','₹799',1],['Printer and CCTV','Setup, faults and health checks','₹599',1],['AMC enquiry','Annual maintenance, home or business','Free consultation',0]];
+var TC=[['Rahul S.','Laptops and hardware'],['Meera K.','Networks and CCTV'],['Imran A.','Data and software']];
+var SL=['10 am to 12 pm','12 to 2 pm','2 to 4 pm','4 to 6 pm'],BK={},selS=-1,selL=-1;
+var sv=document.getElementById('sv'),sl=document.getElementById('sl'),bd=document.getElementById('bd'),bm=document.getElementById('bm');
+SV.forEach(function(s,i){var b=document.createElement('button');b.type='button';b.setAttribute('role','radio');b.setAttribute('aria-checked','false');b.innerHTML='<b></b><small></small><small></small>';b.children[0].textContent=s[0];b.children[1].textContent=s[1];b.children[2].textContent=s[2];b.onclick=function(){pick(i)};sv.appendChild(b)});
+function pick(i){selS=i;[].forEach.call(sv.children,function(c,j){c.setAttribute('aria-checked',j===i)})}
+var d0=new Date();d0.setDate(d0.getDate()+1);bd.min=new Date().toISOString().slice(0,10);bd.value=d0.toISOString().slice(0,10);
+function slots(){sl.innerHTML='';selL=-1;var day=new Date(bd.value).getDate()||1;SL.forEach(function(t,i){var b=document.createElement('button');b.type='button';b.setAttribute('role','radio');b.setAttribute('aria-checked','false');b.textContent=t;if((day+i)%5===0){b.disabled=true;b.title='Fully booked'}b.onclick=function(){selL=i;[].forEach.call(sl.children,function(c,j){c.setAttribute('aria-checked',j===i)})};sl.appendChild(b)})}
+bd.onchange=slots;slots();
+bm.onchange=function(){document.getElementById('ba').hidden=bm.selectedIndex===2};
+document.getElementById('bf').onsubmit=function(e){e.preventDefault();var er=document.getElementById('be'),n=document.getElementById('bn').value.trim(),ph=document.getElementById('bp').value.replace(/[^0-9]/g,''),ad=document.getElementById('bad').value.trim(),m;
+if(selS<0)m='Choose a service.';else if(!bd.value)m='Choose a date.';else if(selL<0)m='Choose a time slot.';else if(!n)m='Enter your name.';else if(ph.length<10)m='Enter a valid phone number.';else if(bm.selectedIndex<2&&!ad)m='Enter the address for the visit or pickup.';
+er.textContent=m||'';if(m)return;
+var ref='ABC-'+(2000+Math.floor(Math.random()*7000)),t=TC[SV[selS][3]];BK[ref]={t:t,when:bd.value+', '+SL[selL]};
+var c=document.getElementById('bc');c.hidden=false;c.innerHTML='<h3></h3><p></p><p></p><p class="sm"></p><div class="cta"></div>';
+c.children[0].textContent='Booking confirmed, '+ref;c.children[1].textContent=SV[selS][0]+', '+bm.value.toLowerCase()+' on '+BK[ref].when+'.';c.children[2].textContent='Technician matched: '+t[0]+' ('+t[1]+').';c.children[3].textContent='Sample booking for this preview. Keep the reference to track it below.';
+var cta=c.children[4];[['Track this repair',function(){document.getElementById('rf').value=ref;document.getElementById('lf').requestSubmit();document.getElementById('service').scrollIntoView()}],['Watch technician',function(){document.getElementById('live').scrollIntoView()}]].forEach(function(a,i){var b=document.createElement('button');b.type='button';b.className='btn'+(i?' o':'');b.textContent=a[0];b.onclick=a[1];cta.appendChild(b)});c.scrollIntoView({block:'nearest'})};
+document.getElementById('lf').onsubmit=function(e){e.preventDefault();var v=document.getElementById('rf').value.trim().toUpperCase(),m=document.getElementById('lm');
+if(BK[v]){dr(1);m.textContent='Technician '+BK[v].t[0]+' assigned for '+BK[v].when+'.'}else if(v==='ABC-1042'){dr(3);m.textContent='Sample repair: waiting for your approval of parts and charges.'}else{dr(-1);m.textContent='No repair found for that reference. Check your receipt, or try ABC-1042.'}};
+var rt=document.getElementById('rt'),tc=document.getElementById('tc'),sh=document.getElementById('sh'),len=rt.getTotalLength(),pp=0,tm=null,eta=document.getElementById('eta'),gs=document.getElementById('gs');
+function gp(){var q=rt.getPointAtLength(len*pp);tc.setAttribute('cx',q.x);tc.setAttribute('cy',q.y);eta.textContent=pp>=1?'Arrived':sh.checked?'Arriving in about '+Math.ceil((1-pp)*14)+' min':'Location paused'}
+function stp(){if(sh.checked)pp=Math.min(1,pp+.03);gp();if(pp>=1){clearInterval(tm);gs.textContent='The technician has arrived at your address.'}}
+document.getElementById('go').onclick=function(){clearInterval(tm);pp=0;gs.textContent=sh.checked?'Technician is on the way. Location updates only during this visit.':'Technician has paused sharing. Switch it on to continue.';gp();if(rm){pp=.5;gp()}else tm=setInterval(stp,700)};
+sh.onchange=function(){tc.style.opacity=sh.checked?1:.25;gs.textContent=sh.checked?'Location sharing is on for this visit.':'Technician paused sharing. The map shows the last known position.';gp()};
+var cbt=document.getElementById('cbt'),cp=document.getElementById('cp'),cm=document.getElementById('cm'),ci=document.getElementById('ci');
+function say(t,who,chips){var b=document.createElement('div');b.className='mb'+(who?' u':'');b.textContent=t;cm.appendChild(b);if(chips){var w=document.createElement('div');w.className='chp';chips.forEach(function(c){var k=document.createElement('button');k.type='button';k.textContent=c[0];k.onclick=c[1];w.appendChild(k)});cm.appendChild(w)}cm.scrollTop=cm.scrollHeight}
+function go2(id,i){cp.hidden=true;cbt.setAttribute('aria-expanded','false');if(i!=null)pick(i);document.getElementById(id).scrollIntoView()}
+var BKC=[['Book a technician',function(){go2('book',0)}]];
+function reply(q){var s=q.toLowerCase(),r=s.match(/abc-[0-9]{4}/);
+if(r){var k=r[0].toUpperCase();if(BK[k])return say('Booking '+k+' is confirmed with '+BK[k].t[0]+' for '+BK[k].when+'.');if(k==='ABC-1042')return say('ABC-1042 is waiting for your approval of parts and charges.');return say('I cannot find '+k+'. Check the reference on your receipt.')}
+if(/slow|lag|hang|freez/.test(s))return say('Try this first:\n1. Restart and check Task Manager for heavy apps.\n2. Make sure at least 15% of storage is free.\n3. Run a full security scan.\nStill slow? An SSD or RAM upgrade often helps.',0,[['Book an upgrade check',function(){go2('book',3)}]]);
+if(/wifi|wi-fi|internet|network|router/.test(s))return say('Restart the router and your device, move closer, and check other devices. If only one device fails, forget and rejoin the network.',0,[['Book network help',function(){go2('book',4)}]]);
+if(/not turn|won.?t start|no power|dead|boot/.test(s))return say('Check the charger and socket, hold the power button for 15 seconds, then try again. If there is still no sign of life, the board or battery may need a technician.',0,BKC.concat([]));
+if(/blue screen|crash|virus|malware/.test(s))return say('Note any error code, avoid installing unknown software and back up important files if you can. A technician can diagnose the cause safely.',0,[['Book software help',function(){go2('book',1)}]]);
+if(/printer|cctv|camera/.test(s))return say('Check power, cables and network connection, then restart the device. We can visit for setup or faults.',0,[['Book printer or CCTV',function(){go2('book',5)}]]);
+if(/warranty|amc|maintenance/.test(s))return say('Repairs carry a service warranty, and AMC plans cover scheduled visits and priority support. Ask for an AMC quotation and we will tailor it to your devices.',0,[['AMC enquiry',function(){go2('book',6)}]]);
+if(/laptop|computer|pc|buy|recommend|suggest|budget/.test(s)){var n=s.replace(/,/g,'').match(/[0-9]{4,6}/),b=n?+n[0]:0,u=/gam/.test(s)?'gaming':/edit|design|video|photo/.test(s)?'creative work':'office and study',t;
+if(u==='gaming')t='a gaming PC or laptop with a dedicated GPU such as an RTX 4060 class card, 16 GB or more memory and an NVMe SSD';else if(u==='creative work')t='a machine with 16 to 32 GB memory, a colour-accurate display and a fast NVMe SSD';else t='a light laptop with a recent processor, 16 GB memory and a 512 GB SSD';
+return say('For '+u+(b?' around ₹'+b.toLocaleString('en-IN'):'')+', look for '+t+'.'+(b?'':' Tell me your budget for a sharper pick.'),0,[['Build a custom PC',function(){go2('build')}],['Talk to sales',function(){go2('book',6)}]])}
+if(/book|technician|visit|repair|service|fix/.test(s))return say('I can set that up. Choose the service, date and slot.',0,BKC);
+if(/track|status|where/.test(s))return say('Enter your repair reference in the tracker, or paste it here, for example ABC-1042.',0,[['Open tracker',function(){go2('service')}]]);
+if(/hi|hello|hey/.test(s))return say('Hello! I can suggest a computer, troubleshoot a problem, book a technician or check a repair.');
+say('I can help with choosing computers, fixing common problems, booking a technician and tracking repairs. What do you need?',0,BKC)}
+function open(){cp.hidden=false;cbt.setAttribute('aria-expanded','true');if(!cm.children.length)say('Hi, I’m the ABC assistant. How can I help?',0,[['Suggest a laptop',function(){q2('Suggest a laptop for office work')}],['My PC is slow',function(){q2('My PC is slow')}],['Book a technician',function(){q2('Book a technician')}],['Track a repair',function(){q2('Track my repair')}]]);ci.focus()}
+function q2(t){say(t,1);reply(t)}
+cbt.onclick=function(){cp.hidden?open():(cp.hidden=true,cbt.setAttribute('aria-expanded','false'))};
+document.getElementById('cx').onclick=function(){cp.hidden=true;cbt.setAttribute('aria-expanded','false')};
+document.getElementById('cf').onsubmit=function(e){e.preventDefault();var t=ci.value.trim();if(!t)return;ci.value='';q2(t)};
+var y=document.getElementById('yr');
+new IntersectionObserver(function(e,o){if(e[0].isIntersecting){o.disconnect();if(rm)return;var s=performance.now();(function k(n){var p=Math.min(1,(n-s)/1800);y.textContent=Math.round(1900+91*(1-Math.pow(1-p,3)));if(p<1)requestAnimationFrame(k)})(s)}},{threshold:.6}).observe(y);
+})();
+</script>
+</body>
+</html>
